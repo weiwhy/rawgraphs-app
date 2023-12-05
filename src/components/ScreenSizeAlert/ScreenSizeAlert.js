@@ -37,22 +37,22 @@ function ScreenSizeAlert() {
           <span role="img" aria-label="Party icon">
             🎉
           </span>{' '}
-          Welcome to the new RAWGraphs!
+          欢迎访问新版 RAWGraphs！
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <p className="big">
-          RAWGraphs 2.0 is designed for {size.width >= 768 ? 'slightly ' : ' '}
-          bigger screens!
+          RAWGraphs 2.0 专为 {size.width >= 768 ? 'slightly ' : ' '}
+          更大的屏幕而设计！
         </p>
         <p>
-          Resize your browser window or{' '}
+          调整浏览器窗口大小，或{' '}
           <a href="mailto:?subject=Visit+RAWGraphs+2.0&body=Hello%21%0D%0APlease+do+not+forget+to+take+a+look+at+the+new+version+of+RAWGraphs%21%0D%0A%0D%0AVisit%3A+https%3A%2F%2Fdev.rawgraphs.io%2F%0D%0A%0D%0ASee+you+later%2C%0D%0AThe+RAWGraphs+Team">
-            <BsEnvelopeFill /> send yourself a reminder
+            <BsEnvelopeFill /> s给自己发送提醒，
           </a>{' '}
-          to come back at a better time.
+          让自己在更好的时间再来。
         </p>
-        <p>Touch devices are not fully supported yet.</p>
+        <p>尚未完全支持触摸设备.</p>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="primary" onClick={handleClose}>
