@@ -32,24 +32,24 @@ export default function ParsingOptions(props) {
   return (
     <Row>
       <Col className={styles.parsingOptions}>
-        <b>DATA PARSING OPTIONS</b>
+        <b>数据解析选项</b>
 
         {props.userDataType === 'csv' && (
           <SeparatorSelector
-            title="Column separator"
+            title="列分割符"
             value={props.separator}
             onChange={(nextSeparator) => props.setSeparator(nextSeparator)}
           />
         )}
         <ThousandsSeparatorSelector
-          title="Thousands separator"
+          title="数字分隔符"
           value={props.thousandsSeparator}
           onChange={(nextSeparator) =>
             props.setThousandsSeparator(nextSeparator)
           }
         />
         <DecimalsSeparatorSelector
-          title="Decimals separator"
+          title="小数分隔符"
           value={props.decimalsSeparator}
           onChange={(nextSeparator) =>
             props.setDecimalsSeparator(nextSeparator)
@@ -75,7 +75,7 @@ export default function ParsingOptions(props) {
 
         <div className="divider mb-3 mt-0" />
 
-        <b>DATA TRANSFORMATION</b>
+        <b>数据转换</b>
 
         <StackSelector
           title="Stack on"
