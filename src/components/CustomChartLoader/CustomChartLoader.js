@@ -31,9 +31,9 @@ function LoadFromFile({ loading, load }) {
       {...getRootProps()}
     >
       <input {...getInputProps()} />
-      <span>Drag a file here or </span>
+      <span>拖动文件到窗口或者 </span>
       <Button className={styles['browse-button']} color="primary">
-        Browse
+        点击窗口上传文件
       </Button>
       <span>a file from your computer</span>
       <div className={styles.dropin}>
