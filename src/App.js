@@ -266,11 +266,11 @@ function App() {
         abortCustomChartLoad={abortCustomChartLoad}
       />
       <div className="app-sections">
-        <Section title={`1. Load your data`} loading={loading}>
+        <Section title={`1. 加载数据`} loading={loading}>
           <DataLoader {...dataLoader} hydrateFromProject={importProject} />
         </Section>
         {data && (
-          <Section title="2. Choose a chart">
+          <Section title="2. 选择图表">
             <CustomChartLoader
               isOpen={isModalCustomChartOpen}
               onClose={toggleModalCustomChart}
@@ -288,7 +288,7 @@ function App() {
           </Section>
         )}
         {data && currentChart && (
-          <Section title={`3. Mapping`} loading={mappingLoading}>
+          <Section title={`3. 绘制图表`} loading={mappingLoading}>
             <DataMapping
               ref={dataMappingRef}
               dimensions={currentChart.dimensions}
@@ -299,7 +299,7 @@ function App() {
           </Section>
         )}
         {data && currentChart && (
-          <Section title="4. Customize">
+          <Section title="4. 个性化图表">
             <ChartPreviewWithOptions
               chart={currentChart}
               dataset={data.dataset}
@@ -313,7 +313,7 @@ function App() {
           </Section>
         )}
         {data && currentChart && rawViz && (
-          <Section title="5. Export">
+          <Section title="5. 导出">
             <Exporter rawViz={rawViz} exportProject={exportProject} />
           </Section>
         )}
