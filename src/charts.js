@@ -30,7 +30,7 @@ import {
   violinplot,
   voronoidiagram,
   voronoitreemap,
-} from '@rawgraphs/rawgraphs-charts'
+} from '@weiwhy/rawgraphs-charts'
 
 import { calendarHeatmap } from '@rawgraphs/rawgraphs-calendar-heatmap'
 
