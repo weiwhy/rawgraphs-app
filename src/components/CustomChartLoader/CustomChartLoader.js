@@ -33,9 +33,9 @@ function LoadFromFile({ loading, load }) {
       <input {...getInputProps()} />
       <span>拖动文件到窗口或者 </span>
       <Button className={styles['browse-button']} color="primary">
-        点击窗口上传
+        浏览
       </Button>
-      <span>文件</span>
+      <span>本地文件</span>
       <div className={styles.dropin}>
         {isDragAccept && <p>All files will be accepted</p>}
         {isDragReject && <p>Some files will be rejected</p>}
