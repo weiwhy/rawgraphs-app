@@ -40,8 +40,7 @@ function DataMismatchModal({
           <>
             <p>There was an error while parsing new data.</p>
             <p>
-              You can load the new data and try to fix the error or return to
-              the data previously loaded.
+              您可以加载新数据并尝试修复错误，或返回到之前加载的数据.
             </p>
           </>
         )}
@@ -52,23 +51,20 @@ function DataMismatchModal({
               <span className="font-weight-bold">
                 {replaceRequiresConfirmation.split(':')[1]}
               </span>
-              , that we can't find in the new data.
+              , 我们在新数据中找不到这些信息.
             </p>
             <p>
-              You can create a new data mapping with the new data or return to
-              the data previously loaded.
+               您可以使用新数据创建新的数据映射，或返回到之前加载的数据.
             </p>
           </>
         )}
         {replaceRequiresConfirmation === 'type-mismatch' && (
           <>
             <p>
-              The data-types previously set for this project can't be applied to
-              the new data.
+              之前为本项目设置的数据类型无法应用于新数据.
             </p>
             <p>
-              You can use the new data and re-set data-types or return to the
-              data previously loaded.
+              您可以使用新数据并重新设置数据类型，或者返回到数据.
             </p>
           </>
         )}
@@ -88,7 +84,7 @@ function DataMismatchModal({
             cancelDataReplace()
           }}
         >
-          Cancel
+          取消
         </Button>
       </Modal.Footer>
     </Modal>
