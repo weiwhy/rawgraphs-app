@@ -47,9 +47,9 @@ export default function LoadProject({ onProjectSelected, setLoadingError }) {
       <input {...getInputProps()} />
       <span>拖动文件到窗口或者 </span>
       <Button className={S['browse-button']} color="primary">
-        点击窗口上传
+        浏览
       </Button>
-      <span>文件</span>
+      <span>本地文件</span>
       {isDragAccept && <p>All files will be accepted</p>}
       {isDragReject && <p>Some files will be rejected</p>}
     </div>
