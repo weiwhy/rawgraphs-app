@@ -128,7 +128,7 @@ export default function Exporter({ rawViz, exportProject }) {
           className="btn btn-primary btn-block raw-btn"
           onClick={downloadViz}
         >
-          Download
+          下载
         </button>
       </div>
     </div>
