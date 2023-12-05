@@ -5,7 +5,7 @@ import styles from './DataSamples.module.scss'
 const samplesList = [
   {
     name: 'Hate crimes in New York',
-    category: 'Alluvial Diagram',
+    category: '冲积图',
     url: './sample-datasets/Alluvial diagram - Hate crimes in New York.tsv',
     delimiter: '\t',
     sourceName: 'NYC Open Data',
