@@ -28,13 +28,13 @@ export function CopyToClipboardButton({ content }) {
       {pending && (
         <>
           <IoMdCheckmarkCircle className="text-success" />
-          <span className="ml-2">Copied to clipboard</span>
+          <span className="ml-2">复制到剪贴板</span>
         </>
       )}
       {!pending && (
         <>
           <BsClipboard />
-          <span className="ml-2">Copy to clipboard</span>
+          <span className="ml-2">复制到剪贴板</span>
         </>
       )}
     </Button>
