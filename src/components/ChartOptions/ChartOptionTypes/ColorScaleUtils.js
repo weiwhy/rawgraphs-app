@@ -12,7 +12,7 @@ function ResetBtn({ resetScale }) {
     <OverlayTrigger
       key="bottom"
       placement="bottom"
-      overlay={<Tooltip id={`tooltip-top`}>Reset domain</Tooltip>}
+      overlay={<Tooltip id={`tooltip-top`}>重置域</Tooltip>}
     >
       <span type="button" className="btn" onClick={resetScale}>
         <BsArrowCounterclockwise width="16" height="16" />
@@ -26,7 +26,7 @@ function InvertBtn({ invertScale }) {
     <OverlayTrigger
       key="bottom"
       placement="bottom"
-      overlay={<Tooltip id={`tooltip-top`}>Invert</Tooltip>}
+      overlay={<Tooltip id={`tooltip-top`}>反转</Tooltip>}
     >
       <span type="button" className="btn" onClick={invertScale}>
         <BsArrowLeftRight width="16" height="16" />
@@ -40,7 +40,7 @@ function LockBtn({ handleChangeLocked, locked }) {
     <OverlayTrigger
       key="bottom"
       placement="bottom"
-      overlay={<Tooltip id={`tooltip-top`}>{locked ? 'Unlock' : 'Lock'} scale</Tooltip>}
+      overlay={<Tooltip id={`tooltip-top`}>{locked ? '解锁' : '锁定'} 标尺</Tooltip>}
     >
       <span
         type="button"
