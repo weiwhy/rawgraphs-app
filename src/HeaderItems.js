@@ -1,6 +1,6 @@
 const headerItems = [
   {
-    label: 'About',
+    label: '关于',
     slug: 'about',
     href: 'https://rawgraphs.io/about',
   },
@@ -10,7 +10,7 @@ const headerItems = [
   //   href: 'https://rawgraphs.io/gallery',
   // },
   {
-    label: 'Learning',
+    label: '手册',
     slug: 'learning',
     href: 'https://rawgraphs.io/learning',
   },
