@@ -14,7 +14,7 @@ export default function Footer(props) {
         <Row>
           <Col xs={6} sm={{ span: 5, order: 1 }} lg={{ span: 3, order: 1 }}>
             <p className="Xsmall">
-              RAWGraphs is an open source project designed and developed by{' '}
+              RAWGraphs是一个开源项目，由{' '}
               <a
                 href="http://densitydesign.org/"
                 target="_blank"
@@ -36,7 +36,7 @@ export default function Footer(props) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Inmagik
+                Inmagik设计开发
               </a>
               .
               <br />© 2013-2021{' '}
@@ -57,7 +57,7 @@ export default function Footer(props) {
             xl={{ span: 2, offset: 2 }}
           >
             <p>
-              <BsFillEnvelopeFill /> hello at rawgraphs.io
+              <BsFillEnvelopeFill /> 欢迎使用
             </p>
             <p>
               <FaTwitter />{' '}
