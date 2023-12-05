@@ -7,7 +7,7 @@ import { Alert } from 'react-bootstrap'
  */
 function WarningMessage({
   variant = 'warning',
-  message = 'A default warning message.',
+  message = '默认警告信息。',
   action = null,
 }) {
   return (
