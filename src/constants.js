@@ -85,9 +85,9 @@ export const WEBWORKER_ACTIVE = true
 
 export const separatorsLabels = {
   '\\t': 'Tab',
-  ';': 'Semicolon',
-  ',': 'Comma',
-  '|': 'Pipe',
+  ';': '分号',
+  ',': '逗号',
+  '|': '管道符',
 }
 
 export const separatorsList = Object.keys(separatorsLabels)
@@ -95,13 +95,13 @@ export const separatorsList = Object.keys(separatorsLabels)
 export const DefaultSeparator = ","
 
 export const AGGREGATIONS_LABELS = {
-  "count": "Count",
-  "mean": "Average",
-  "median": "Median",
-  "max": "Max",
-  "min": "Min",
-  "countDistinct": "Count unique",
-  "sum": "Sum",
+  "count": "计数",
+  "mean": "平均值",
+  "median": "中心值",
+  "max": "最大值",
+  "min": "最小值",
+  "countDistinct": "去重计数",
+  "sum": "求和",
   "csv": "CSV",
   "csvDistinct": "CSV (unique)",
 }
