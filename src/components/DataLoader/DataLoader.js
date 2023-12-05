@@ -66,7 +66,7 @@ function DataLoader({
   const options = [
     {
       id: 'paste',
-      name: 'Paste your data',
+      name: '粘贴数据',
       loader: (
         <Paste
           userInput={userInput}
@@ -75,13 +75,13 @@ function DataLoader({
         />
       ),
       message:
-        'Copy and paste your data from other applications or websites. You can use tabular (TSV, CSV, DSV) or JSON data.',
+        '从其他应用程序或网站复制并粘贴数据。您可以使用表格（TSV、CSV、DSV）或 JSON 数据。',
       icon: BsClipboard,
       allowedForReplace: true,
     },
     {
       id: 'upload',
-      name: 'Upload your data',
+      name: '上传数据',
       loader: (
         <UploadFile
           userInput={userInput}
@@ -91,13 +91,13 @@ function DataLoader({
           setLoadingError={setLoadingError}
         />
       ),
-      message: 'You can load tabular (TSV, CSV, DSV) or JSON data.',
+      message: '可以上传表格（TSV、CSV、DSV）或 JSON 文件数据。',
       icon: BsUpload,
       allowedForReplace: true,
     },
     {
       id: 'sample',
-      name: 'Try our data samples',
+      name: '使用样例数据',
       message: '',
       loader: (
         <DataSamples
@@ -110,8 +110,8 @@ function DataLoader({
     },
     {
       id: 'sparql',
-      name: 'SPARQL query',
-      message: 'Load data with a SparQL query',
+      name: 'SPARQL查询',
+      message: '加载SPARQL查询的数据',
       loader: (
         <SparqlFetch
           userInput={userInput}
@@ -128,9 +128,9 @@ function DataLoader({
     },
     {
       id: 'url',
-      name: 'From URL',
+      name: '从URL加载数据',
       message:
-        'Enter a web address (URL) pointing to the data (e.g. a public Dropbox file, a public API, ...). Please, be sure the server is CORS-enabled.',
+        '输入指向数据的网址 (URL)（例如 Dropbox 公共文件、公共 API 等）。请确保服务器已启用 CORS。',
       loader: (
         <UrlFetch
           userInput={userInput}
@@ -147,8 +147,8 @@ function DataLoader({
     },
     {
       id: 'project',
-      name: 'Open your project',
-      message: 'Load a .rawgraphs project.',
+      name: '打开存在的项目',
+      message: '加载.rawgraphs格式的项目.',
       loader: (
         <LoadProject
           onProjectSelected={hydrateFromProject}
