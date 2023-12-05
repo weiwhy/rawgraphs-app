@@ -41,11 +41,11 @@ export default function UploadFile({
       {...getRootProps()}
     >
       <input {...getInputProps()} />
-      <span>Drag a file here or </span>
+      <span>拖动文件到窗口或者 </span>
       <Button className={S['browse-button']} color="primary">
-        Browse
+        点击窗口上传
       </Button>
-      <span>a file from your computer</span>
+      <span>文件</span>
       {isDragAccept && <p>All files will be accepted</p>}
       {isDragReject && <p>Some files will be rejected</p>}
     </div>
