@@ -32,7 +32,7 @@ import {
   voronoitreemap,
 } from '@weiwhy/rawgraphs-charts'
 
-import { calendarHeatmap } from '@rawgraphs/rawgraphs-calendar-heatmap'
+import { calendarHeatmap } from '@weiwhy/rawgraphs-calendar-heatmap'
 
 // New charts, not included into first release.
 // Comment at necessity.
