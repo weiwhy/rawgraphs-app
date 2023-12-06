@@ -1,6 +1,6 @@
 /* eslint-disable no-restricted-globals */
 import * as d3 from 'd3'
-import * as rawgraphsCore from '@rawgraphs/rawgraphs-core'
+import * as rawgraphsCore from '@weiwhy/rawgraphs-core'
 import LRU from 'lru-cache'
 
 export const NPM_CDN = 'https://cdn.jsdelivr.net/npm/'
@@ -19,7 +19,7 @@ const cacheDependenciesTree = new LRU(400)
 
 const DEPENDENCIES_ALIAS = {
   d3,
-  '@rawgraphs/rawgraphs-core': rawgraphsCore,
+  '@weiwhy/rawgraphs-core': rawgraphsCore,
 }
 
 /**
