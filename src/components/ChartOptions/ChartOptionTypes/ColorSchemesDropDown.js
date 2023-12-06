@@ -5,7 +5,7 @@ import {
   colorPresets,
   getColorDomain,
   getPresetScale
-} from '@rawgraphs/rawgraphs-core'
+} from '@weiwhy/rawgraphs-core'
 import styles from '../ChartOptions.module.scss'
 
 const ColorSchemesDropDown = ({
