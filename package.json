@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@weiwhy/rawgraphs-calendar-heatmap": "v1.0.0",
-    "@weiwhy/rawgraphs-charts": "^1.0.1",
+    "@weiwhy/rawgraphs-charts": "^1.0.2",
     "@weiwhy/rawgraphs-core": "^1.0.0-beta.18",
     "@rdfjs-elements/sparql-editor": "^0.1.6",
     "@testing-library/jest-dom": "^4.2.4",
