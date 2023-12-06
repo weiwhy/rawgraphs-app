@@ -3,7 +3,7 @@ import {
   getOptionsConfig,
   getDefaultOptionsValues,
   deserializeProject,
-} from '@rawgraphs/rawgraphs-core'
+} from '@weiwhy/rawgraphs-core'
 import HeaderItems from './HeaderItems'
 import Header from './components/Header'
 import Section from './components/Section'
@@ -17,7 +17,7 @@ import Exporter from './components/Exporter'
 import get from 'lodash/get'
 import find from 'lodash/find'
 import usePrevious from './hooks/usePrevious'
-import { serializeProject } from '@rawgraphs/rawgraphs-core'
+import { serializeProject } from '@weiwhy/rawgraphs-core'
 import baseCharts from './charts'
 import useSafeCustomCharts from './hooks/useSafeCustomCharts'
 import useDataLoader from './hooks/useDataLoader'
