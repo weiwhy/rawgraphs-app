@@ -14,7 +14,7 @@ import {
   colorPresets,
   getAvailableScaleTypes,
   getValueType,
-} from '@rawgraphs/rawgraphs-core'
+} from '@weiwhy/rawgraphs-core'
 import styles from '../ChartOptions.module.scss'
 import usePrevious from '../../../hooks/usePrevious'
 
