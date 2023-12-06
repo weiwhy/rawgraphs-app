@@ -272,13 +272,13 @@ const ChartDimensionCard = ({
             })}
             ref={drop}
           >
-            {!dimension.multiple && 'Drop dimension here'}
+            {!dimension.multiple && '将维度拖放到此处'}
             {dimension.multiple &&
               columnsMappedHere.length === 0 &&
-              'Drop dimensions here'}
+              '将维度拖放到此处'}
             {dimension.multiple &&
               columnsMappedHere.length > 0 &&
-              'Drop another dimension here'}
+              '在这里放置另一个维度'}
           </div>
         )}
       </div>
