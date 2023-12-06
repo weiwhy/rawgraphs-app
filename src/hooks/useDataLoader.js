@@ -1,4 +1,4 @@
-import { parseDataset } from '@rawgraphs/rawgraphs-core'
+import { parseDataset } from '@weiwhy/rawgraphs-core'
 import { difference, get } from 'lodash'
 import { useCallback, useState } from 'react'
 import { DefaultSeparator, localeList, WEBWORKER_ACTIVE } from '../constants'
