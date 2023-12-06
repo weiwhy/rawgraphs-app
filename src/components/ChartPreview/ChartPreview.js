@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { chart as rawChart } from '@rawgraphs/rawgraphs-core'
+import { chart as rawChart } from '@weiwhy/rawgraphs-core'
 import useDebounce from '../../hooks/useDebounce'
 import WarningMessage from '../WarningMessage'
 import { onChartRendered } from '../../gaEvents'
