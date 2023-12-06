@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap'
 import { useDropzone } from 'react-dropzone'
 import classNames from 'classnames'
 import S from './LoadProject.module.scss'
-import { deserializeProject } from '@rawgraphs/rawgraphs-core'
+import { deserializeProject } from '@weiwhy/rawgraphs-core'
 import charts from '../../../charts'
 
 
