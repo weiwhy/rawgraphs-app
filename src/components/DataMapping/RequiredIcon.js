@@ -7,7 +7,7 @@ function RequiredIcon() {
     <OverlayTrigger
       key="top"
       placement="top"
-      overlay={<Tooltip id={`tooltip-top`}>Mandatory</Tooltip>}
+      overlay={<Tooltip id={`tooltip-top`}>必须</Tooltip>}
     >
       <Asterisk width="1rem" height="1rem" style={{marginRight:"2px"}} />
     </OverlayTrigger>

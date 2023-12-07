@@ -40,7 +40,7 @@ function ChartSelector({
     <>
       <Row>
         <Col className="text-right">
-          Show
+          过滤
           <Dropdown className="d-inline-block ml-2 raw-dropdown">
             <Dropdown.Toggle variant="white" className="pr-5">
               {filter.charAt(0).toUpperCase() + filter.slice(1)}
@@ -50,7 +50,7 @@ function ChartSelector({
                 key={'All charts'}
                 onClick={() => handleFilterChange('All charts')}
               >
-                All charts
+                所有图表
               </Dropdown.Item>
               {uniq(
                 availableCharts.map((d) => d.metadata.categories).flat()

@@ -68,7 +68,7 @@ function LoadFromString({ load, loading, placeholder }) {
           className="btn btn-primary"
           onClick={() => {}}
         >
-          Load your chart
+          加载图表
         </button>
       </div>
     </form>
@@ -115,7 +115,7 @@ function CustomChartLoaderForm({
           )}
         >
           <BsUpload className="w-25" />
-          <h4 className="m-0 d-inline-block">Load from file</h4>
+          <h4 className="m-0 d-inline-block">从文件加载</h4>
         </div>
         <div
           onClick={() => changeImportType('url')}
@@ -128,7 +128,7 @@ function CustomChartLoaderForm({
           )}
         >
           <BsCloud className="w-25" />
-          <h4 className="m-0 d-inline-block">Import from URL</h4>
+          <h4 className="m-0 d-inline-block">从 URL 导入</h4>
         </div>
         <div
           onClick={() => changeImportType('npm')}
@@ -141,7 +141,7 @@ function CustomChartLoaderForm({
           )}
         >
           <BsCloud className="w-25" />
-          <h4 className="m-0 d-inline-block">Import from NPM</h4>
+          <h4 className="m-0 d-inline-block">从 NPM 导入</h4>
         </div>
       </div>
       <div className="col-md-8">
@@ -154,7 +154,7 @@ function CustomChartLoaderForm({
               loadCustomChartsFromNpm(pkg).then(onClose, handleError)
             }}
             key="npm"
-            placeholder={'Load UMD or AMD JS File from NPM'}
+            placeholder={'从 URL 加载 UMD 或 AMD JS 文件'}
           />
         )}
         {type === 'url' && (
@@ -166,7 +166,7 @@ function CustomChartLoaderForm({
               loadCustomChartsFromUrl(url).then(onClose, handleError)
             }}
             key="url"
-            placeholder={'Load UMD or AMD JS File from URL'}
+            placeholder={'从 URL 加载 UMD 或 AMD JS 文件'}
           />
         )}
         {type === 'file' && (
@@ -178,12 +178,12 @@ function CustomChartLoaderForm({
               uploadCustomCharts(url).then(onClose, handleError)
             }}
             key="url"
-            placeholder={'Load UMD or AMD JS File from URL'}
+            placeholder={'从 URL 加载 UMD 或 AMD JS 文件'}
           />
         )}
         {error && (
           <div className="alert alert-danger mt-2">
-            Error during custom chart import
+            自定义图表导入时出错
           </div>
         )}
       </div>
@@ -204,7 +204,7 @@ function CustomChartLoader({ isOpen, onClose, ...props }) {
       contentClassName="bg-white"
     >
       <Modal.Header closeButton>
-        <Modal.Title>Load custom chart</Modal.Title>
+        <Modal.Title>加载自定义图表</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
@@ -212,9 +212,9 @@ function CustomChartLoader({ isOpen, onClose, ...props }) {
       </Modal.Body>
       <Modal.Footer>
         <div className='text-center w-100'>
-          Do you want to know how to create a custom chart?{' '}
+        您想知道如何创建自定义图表吗？{' '}
           <a href="https://rawgraphs.io" target="_blank" rel="noreferrer">
-            Check our documentation
+          阅读我们的文档
           </a>
         </div>
       </Modal.Footer>

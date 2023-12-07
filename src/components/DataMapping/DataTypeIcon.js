@@ -12,7 +12,7 @@ function DataTypeIcon({ type }) {
         placement="top"
         overlay={
           <Tooltip id={`tooltip-top`}>
-            Accepts {type}s
+            接受 {type}s
           </Tooltip>
         }
       >

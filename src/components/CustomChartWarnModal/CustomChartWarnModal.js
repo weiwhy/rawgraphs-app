@@ -16,13 +16,12 @@ export default function CustomChartWarnModal({
       contentClassName='border'
     >
       <Modal.Header closeButton>
-        <Modal.Title>Warning!</Modal.Title>
+        <Modal.Title>警告!</Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
         <p>
-          You are about to execute third party JavaScript continue at your own
-          risk.
+        您即将执行第三方JavaScript继续执行,风险自负。
         </p>
         {toConfirmCustomChart && toConfirmCustomChart.type === 'project' && (
           <div
@@ -46,7 +45,7 @@ export default function CustomChartWarnModal({
             abortCustomChartLoad()
           }}
         >
-          Don't execute
+          取消
         </Button>
         <Button
           variant="primary"
@@ -54,7 +53,7 @@ export default function CustomChartWarnModal({
             confirmCustomChartLoad()
           }}
         >
-          Continue
+          继续
         </Button>
       </Modal.Footer>
     </Modal>

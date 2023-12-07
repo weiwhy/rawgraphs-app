@@ -85,7 +85,7 @@ export function parseAndCheckData(dataString, opts) {
     return [
       dataType,
       data,
-      'Cannot parse dataset! (This should never happen)',
+      '无法解析数据集！',
       {},
     ]
   } else {
@@ -94,7 +94,7 @@ export function parseAndCheckData(dataString, opts) {
     } else if (data.length > 0) {
       return [dataType, data, null, extra]
     } else {
-      return [null, null, "We can't parse your data.", {}]
+      return [null, null, "我们无法解析您的数据。", {}]
     }
   }
 }

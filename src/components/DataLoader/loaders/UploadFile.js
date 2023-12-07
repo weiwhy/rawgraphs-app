@@ -46,8 +46,8 @@ export default function UploadFile({
         浏览
       </Button>
       <span>本地文件</span>
-      {isDragAccept && <p>All files will be accepted</p>}
-      {isDragReject && <p>Some files will be rejected</p>}
+      {isDragAccept && <p>将接受所有文件</p>}
+      {isDragReject && <p>某些文件将被拒绝</p>}
     </div>
   )
 }

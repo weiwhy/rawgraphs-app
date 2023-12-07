@@ -212,30 +212,28 @@ function DataLoader({
     const column = Object.keys(errors[0].error)[0]
     return (
       <span>
-        Ops, please check <span className="font-weight-bold">row {row}</span> at
-        column <span className="font-weight-bold">{column}</span>.{' '}
+        Ops，请检查 <span className="font-weight-bold">行 {row}</span> 在列 <span className="font-weight-bold">{column}</span>.{' '}
         {errors.length === 2 && (
           <>
             {' '}
-            There's another issue at row{' '}
+            还有另一个问题{' '}
             <span className="font-weight-bold">{errors[1].row + 1}</span>.{' '}
           </>
         )}
         {errors.length > 2 && (
           <>
             {' '}
-            There are issues in{' '}
-            <span className="font-weight-bold">{errors.length - 1}</span> more
-            rows.{' '}
+            存在问题{' '}
+            <span className="font-weight-bold">{errors.length - 1}</span> 多行.{' '}
           </>
         )}
         {successRows > 0 && (
           <>
-            The remaining{' '}
+            其余的{' '}
             <span className="font-weight-bold">
-              {successRows} row{successRows > 1 && <>s</>}
+              {successRows} 行{successRows > 1 && <>s</>}
             </span>{' '}
-            look{successRows === 1 && <>s</>} fine.
+            look{successRows === 1 && <>s</>} 不存在问题.
           </>
         )}
       </span>
@@ -304,7 +302,7 @@ function DataLoader({
                   onClick={reloadRAW}
                 >
                   <BsArrowRepeat className="mr-2" />
-                  <h4 className="m-0 d-inline-block">{'Reset'}</h4>
+                  <h4 className="m-0 d-inline-block">{'重置'}</h4>
                 </div>
 
                 <div
@@ -313,7 +311,7 @@ function DataLoader({
                     cancelDataReplace()
                   }}
                 >
-                  <h4 className="m-0 d-inline-block">{'Cancel'}</h4>
+                  <h4 className="m-0 d-inline-block">{'取消'}</h4>
                 </div>
               </>
             )}

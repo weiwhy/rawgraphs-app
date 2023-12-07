@@ -103,7 +103,7 @@ export default function SparqlFetch({
       })
       .catch((err) => {
         setLoadingError(
-          'It was not possible to execute the query on the given endpoint'
+          '无法在给定的SPARQL地址上执行查询'
         )
       })
   }, [parsedQuery, setLoadingError, setUserInput, url])
@@ -125,7 +125,7 @@ export default function SparqlFetch({
   return (
     <>
       <div className={classNames(S['base-iri-input-here'])}>
-        <span>Write your SPARQL Endpoint here</span>
+        <span>输入您的SPARQL地址</span>
       </div>
       <input
         className={classNames('w-100', S['url-input'])}
@@ -135,7 +135,7 @@ export default function SparqlFetch({
         }}
       />
       <div className={classNames(S['query-input-here'])}>
-        <span>Write your query here</span>
+        <span>输入查询条件</span>
       </div>
       <div ref={editorDomRef} />
       <div className="text-right">
@@ -144,7 +144,7 @@ export default function SparqlFetch({
           disabled={!parsedQuery || !url}
           onClick={onSubmit}
         >
-          Run query
+          执行查询
         </button>
       </div>
     </>

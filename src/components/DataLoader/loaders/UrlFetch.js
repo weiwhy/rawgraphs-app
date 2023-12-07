@@ -25,7 +25,7 @@ export default function UrlFetch({
         setUserInput(data, source)
         setLoadingError(null)
       } catch (e) {
-        setLoadingError('Loading error. ' + e.message)
+        setLoadingError('加载错误： ' + e.message)
       }
     },
     [setLoadingError, setUserInput]
@@ -56,7 +56,7 @@ export default function UrlFetch({
           disabled={!url}
           type="submit"
         >
-          Load data
+          载入数据
         </button>
       </div>
     </form>

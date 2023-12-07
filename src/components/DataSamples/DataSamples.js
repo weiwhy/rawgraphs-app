@@ -4,17 +4,17 @@ import styles from './DataSamples.module.scss'
 
 const samplesList = [
   {
-    name: 'Hate crimes in New York',
+    name: '纽约的仇恨犯罪',
     category: '冲积图',
     url: './sample-datasets/Alluvial diagram - Hate crimes in New York.tsv',
     delimiter: '\t',
-    sourceName: 'NYC Open Data',
+    sourceName: '纽约开放数据',
     sourceURL:
       'https://data.cityofnewyork.us/Public-Safety/NYPD-Hate-Crimes/bqiq-cu78',
   },
   {
-    name: 'Lannister vs Starck relationships',
-    category: 'Arc diagrams',
+    name: '兰尼斯特与斯塔克的关系',
+    category: '弧形图',
     url:
       './sample-datasets/Arc diagrams - Lannister vs Starck relationships.tsv',
     delimiter: '\t',
@@ -22,58 +22,58 @@ const samplesList = [
     sourceURL: 'https://www.kaggle.com/theobreid/got-data',
   },
   {
-    name: 'EU Index of consumer prices',
-    category: 'Horizon Graph',
+    name: '欧盟消费者价格指数',
+    category: '地平线图',
     url: './sample-datasets/Horizon Graph - EU Index of consumer prices.tsv',
     delimiter: '\t',
-    sourceName: 'Eurostat',
+    sourceName: '欧盟统计局',
     sourceURL:
       'https://ec.europa.eu/eurostat/databrowser/bookmark/d84c6140-ed7e-443e-baf9-918679862d58?lang=en',
   },
 
   {
-    name: 'New York mean wage per occupation',
-    category: 'Beeswarm plot',
+    name: '纽约每个职业的平均工资',
+    category: '蜂群图',
     url: './sample-datasets/Beeswarm plot - NY mean wages.tsv',
     delimiter: '\t',
-    sourceName: 'NYC Open Data',
+    sourceName: '纽约开放数据',
     sourceURL:
       'https://data.ny.gov/w/gkgz-nw24/caer-yrtv?cur=S3JXBWlXCbs&from=SAa8_R9mOdD',
   },
 
   {
-    name: 'Temperature in Paris during the World War II',
-    category: 'Contour plot',
+    name: '第二次世界大战期间巴黎的气温',
+    category: '等高线图',
     url:
       './sample-datasets/Contour plot - Mean temperature in Paris 1944-1945.tsv',
     delimiter: '\t',
-    sourceName: 'NOAA',
+    sourceName: '国家海洋与大气局数据浮标办公室',
     sourceURL:
       'https://www.ncdc.noaa.gov/data-access/land-based-station-data/land-based-datasets/world-war-ii-era-data',
   },
 
   {
-    name: 'Highest grossing movies in history',
-    category: 'Bubble chart',
+    name: '史上票房最高的电影',
+    category: '气泡图',
     url: './sample-datasets/Bubble Chart - TOP 50 Groossing Movies.tsv',
     delimiter: '\t',
-    sourceName: 'Wikipedia',
+    sourceName: '维基百科',
     sourceURL:
       'https://en.wikipedia.org/w/index.php?title=List_of_highest-grossing_films&oldid=1023491946',
   },
 
   {
-    name: 'Foreign residents in Milan',
+    name: '在米兰的外国居民',
     category: 'Bumpchart',
     url: './sample-datasets/Bump chart - Foreign residents in Milan.tsv',
     delimiter: '\t',
-    sourceName: 'Comune di Milano',
+    sourceName: '米兰市',
     sourceURL:
       'https://dati.comune.milano.it/dataset/ds74-popolazione-residenti-stranieri-cittadinanza',
   },
 
   {
-    name: 'Estimated migration flows between macro-areas from 1960 to 1970',
+    name: '1960年至1970年宏观地区之间的估计移民流量',
     category: 'Chord diagram',
     url:
       './sample-datasets/Chord Diagram - Estimated migration flows between macro-areas.csv',
@@ -84,18 +84,18 @@ const samplesList = [
   },
 
   {
-    name: 'Most populated cities per continent',
-    category: 'Circle packing',
+    name: '弦线图',
+    category: '饼形图',
     url: './sample-datasets/Circle Packing - Most populated cities.tsv',
     delimiter: '\t',
-    sourceName: 'Wikidata',
+    sourceName: '维基百科',
     sourceURL:
       'https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3Fpopulation%20%3Fcountry%20%3FcountryLabel%20%3Fcontinent%20%3FcontinentLabel%0AWHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP31%20wd%3AQ1637706%20.%20%23%20get%20things%20that%20are%20bands%0A%20%20%3Fitem%20wdt%3AP1082%20%3Fpopulation%20.%0A%20%20%23%3Fitems%20wdt%3AP571%20%3Fdate%20.%20%23%20get%20the%20date%20when%20the%20band%20was%20founded%0A%20%20%3Fitem%20wdt%3AP17%20%3Fcountry%20.%0A%20%20%3Fcountry%20wdt%3AP30%20%3Fcontinent%20.%0A%20%20%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0A',
   },
 
   {
-    name: 'Kobe Bryant shoots',
-    category: 'Hexagonal Binning, Voronoi diagram',
+    name: '科比投篮',
+    category: '六角二进制Voronoi图',
     url: './sample-datasets/Hexbin - basketball shots.tsv',
     delimiter: '\t',
     sourceName: 'Kaggle',
@@ -113,11 +113,11 @@ const samplesList = [
   },
 
   {
-    name: 'Italians PMs and Presidents',
+    name: '意大利总理和总统',
     category: 'Gantt chart',
     url: './sample-datasets/Gantt chart - Italian PMs and presidents.tsv',
     delimiter: '\t',
-    sourceName: 'Wikidata',
+    sourceName: '维基百科',
     sourceURL:
       'https://query.wikidata.org/#%23Primi%20ministri%0ASELECT%20%3Fitem%20%3FitemLabel%20%3Fstart%20%3Fend%0AWHERE%20%0A%7B%0A%20%20%3Fitem%20p%3AP39%20%3Fposition.%0A%20%20%3Fposition%20ps%3AP39%20wd%3AQ332711%3B%0A%20%20%20%20%20%20%20%20pq%3AP580%20%3Fstart%3B%0A%20%20%20%20%20%20%20%20pq%3AP582%20%3Fend%0A%20%20%23%3Fstart%20wdt%3AP580%20%3Fitem.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D',
   },
