@@ -38,10 +38,10 @@ const ChartPreview = ({
     if (requiredVariables.length > 0) {
       let errorMessage = (
         <span>
-          Required chart variables: you need to map{' '}
+          图表所需变量: 需要映射{' '}
           {requiredVariables
             .map((d, i) => <span key={i} className="font-weight-bold">{d.name}</span>)
-            .reduce((prev, curr) => [prev, ' and ', curr])}
+            .reduce((prev, curr) => [prev, ' 和 ', curr])}
         </span>
       )
       setError({ variant: 'secondary', message: errorMessage })
