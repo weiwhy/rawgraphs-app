@@ -347,7 +347,7 @@ function DataLoader({
               onClick={reloadRAW}
             >
               <BsArrowRepeat className="mr-2" />
-              <h4 className="m-0 d-inline-block">{'Reset'}</h4>
+              <h4 className="m-0 d-inline-block">{'重置'}</h4>
             </div>
 
             <div
@@ -362,7 +362,7 @@ function DataLoader({
               }}
             >
               <BsArrowCounterclockwise className="mr-2" />
-              <h4 className="m-0 d-inline-block">{'Change data'}</h4>
+              <h4 className="m-0 d-inline-block">{'更改数据'}</h4>
             </div>
           </Col>
         )}
@@ -377,12 +377,11 @@ function DataLoader({
                   message={
                     <span>
                       <span className="font-weight-bold">
-                        {data.dataset.length} rows
+                        {data.dataset.length} 行
                       </span>{' '}
                       (
                       {data.dataset.length * Object.keys(data.dataTypes).length}{' '}
-                      cells) have been successfully parsed, now you can choose a
-                      chart!
+                      列) 已成功解析，现在您可以选择图表了！
                     </span>
                   }
                   action={copyToClipboardButton}

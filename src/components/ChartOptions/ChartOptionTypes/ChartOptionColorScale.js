@@ -366,7 +366,7 @@ const ChartOptionColorScale = ({
     <>
       <Row className={props.className} style={{marginTop:'8px', marginBottom:'8px'}}>
         <Col xs={5} className="d-flex align-items-center nowrap">
-          Color scale
+          色标
         </Col>
         <Col xs={7}>
           <Dropdown className="d-inline-block raw-dropdown w-100">
@@ -391,7 +391,7 @@ const ChartOptionColorScale = ({
       {/* Color scheme */}
       <Row className={[props.className].join(' ')} style={{marginTop:'8px', marginBottom:'8px'}}>
         <Col xs={5} className="d-flex align-items-center nowrap">
-          Color scheme
+        配色方案
         </Col>
         <Col xs={7}>
           <ColorSchemesDropDown
