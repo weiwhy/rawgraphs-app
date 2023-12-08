@@ -7,7 +7,7 @@ import styles from './ChartSelector.module.scss'
 import { BsFillTrashFill } from 'react-icons/bs'
 
 function filterCharts(charts, filter) {
-  return filter === 'All charts'
+  return filter === '所有图表'
     ? charts
     : charts.filter((d) => d.metadata.categories.indexOf(filter) !== -1)
 }
@@ -19,7 +19,7 @@ function ChartSelector({
   onRemoveCustomChart,
   onAddChartClick,
 }) {
-  const [filter, setFilter] = useState('All charts')
+  const [filter, setFilter] = useState('所有图表')
 
   const charts = useMemo(() => {
     return filterCharts(availableCharts, filter)
@@ -47,8 +47,8 @@ function ChartSelector({
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item
-                key={'All charts'}
-                onClick={() => handleFilterChange('All charts')}
+                key={'所有图表'}
+                onClick={() => handleFilterChange('所有图表')}
               >
                 所有图表
               </Dropdown.Item>
