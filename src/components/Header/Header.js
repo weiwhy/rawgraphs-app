@@ -16,7 +16,7 @@ export default function Header({ menuItems }) {
               </Nav.Link>
             )
           })}
-          <a
+          {/* <a
             role="button"
             href="https://github.com/rawgraphs/rawgraphs-app/issues"
             target="_blank"
@@ -24,8 +24,8 @@ export default function Header({ menuItems }) {
             className="btn btn-sm btn-primary ml-2 d-flex flex-column align-items-center justify-content-center"
           >
             Report issue
-          </a>
-          <a
+          </a> */}
+          {/* <a
             role="button"
             href="https://github.com/sponsors/rawgraphs"
             target="_blank"
@@ -33,7 +33,7 @@ export default function Header({ menuItems }) {
             className="btn btn-sm btn-primary ml-2 d-flex flex-column align-items-center justify-content-center"
           >
             Support us
-          </a>
+          </a> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

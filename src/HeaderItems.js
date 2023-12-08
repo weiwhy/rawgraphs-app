@@ -27,7 +27,7 @@ const headerItems = [
   {
     label: 'GitHub',
     slug: 'github',
-    href: 'https://github.com/rawgraphs/rawgraphs-app',
+    href: 'https://github.com/weiwhy/rawgraphs-app',
   },
 ]
 
